@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolos Juninos Lucrativos</title>
+    
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1596537354932830');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1596537354932830&ev=PageView&noscript=1"/></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <!-- Fonte Inter para máximo impacto, leitura rápida e estilo moderno -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --terracotta: #D84B24;
+            --terracotta-dark: #A63314;
+            --terracotta-vibrant: #FA582A;
+            --gold: #F0B849;
+            --cream: #FAF6F0;
+            --brown: #2C1A14;
+            --green: #25D366; /* Verde chamativo para conversão */
+            --green-dark: #1DA851;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--cream); 
+            color: var(--brown); 
+            /* Espaçamentos reduzidos conforme solicitado para ritmo dinâmico */
+            line-height: 1.35; 
+            letter-spacing: -0.3px;
+            font-weight: 500;
+        }
+        
+        /* Títulos de alto impacto */
+        h1, h2, h3 { 
+            font-weight: 900;
+            letter-spacing: -1.5px;
+            line-height: 1.1;
+        }
+        
+        .container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+        section { padding: 70px 0; }
+        @media (max-width: 768px) { section { padding: 50px 0; } }
+        
+        /* Hero Section - Super Impactante */
+        .hero-section {
+            background: radial-gradient(circle at top, #F96332 0%, #B82E0A 100%);
+            color: #fff;
+            padding-top: 40px;
+            padding-bottom: 50px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+        
+        .pre-headline { 
+            background: rgba(0,0,0,0.2);
+            color: #fff; font-weight: 800; font-size: 0.85rem; letter-spacing: 1px; 
+            padding: 6px 16px; border-radius: 50px; display: inline-block; margin-bottom: 24px;
+            text-transform: uppercase; border: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .hero-section h1 { font-size: 2.5rem; color: #fff; margin-bottom: 16px; text-shadow: 0 4px 12px rgba(0,0,0,0.2); position: relative;}
+        .hero-section .subhead { font-size: 1.15rem; color: #FFE3DB; margin-bottom: 30px; font-weight: 500; position: relative;}
+        
+        @media (max-width: 768px) { 
+            .hero-section h1 { font-size: 2rem; } 
+        }
+        
+        h2 { font-size: 2.2rem; color: var(--terracotta-dark); margin-bottom: 32px; text-align: center; }
+        @media (max-width: 768px) { h2 { font-size: 1.8rem; } }
+        
+        /* Botões Mega Chamativos */
+        .cta-btn {
+            display: flex; align-items: center; justify-content: center; width: 100%; max-width: 95%; margin: 0 auto;
+            min-height: 75px; 
+            background: linear-gradient(180deg, #3EE075 0%, #15B347 100%);
+            color: #fff; text-decoration: none;
+            font-size: 1.3rem; font-weight: 900; border-radius: 16px; 
+            box-shadow: 0 12px 24px rgba(21, 179, 71, 0.4), inset 0 2px 0 rgba(255,255,255,0.4);
+            transition: all 0.2s ease; 
+            text-align: center; border: 2px solid #0D8C33; cursor: pointer; padding: 16px 20px; 
+            text-transform: uppercase; letter-spacing: -0.5px; position: relative;
+            animation: pulse-green 2s infinite;
+        }
+        .cta-btn:hover { 
+            transform: translateY(-2px); 
+            box-shadow: 0 16px 32px rgba(21, 179, 71, 0.5), inset 0 2px 0 rgba(255,255,255,0.4); 
+            background: linear-gradient(180deg, #4CF085 0%, #19CC52 100%);
+        }
+        .cta-btn span { font-weight: 500; font-size: 0.9rem; display: block; opacity: 0.9; text-transform: none; letter-spacing: 0; margin-top: 4px;}
+        
+        @keyframes pulse-green {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+        
+        .cta-microcopy { text-align: center; font-size: 0.85rem; color: #fff; margin-top: 16px; font-weight: 600; opacity: 0.8;}
+        .dark-microcopy { color: #888; }
+        
+        /* VSL Specific - Super Compacto e Direto */
+        #vsl-container { position: relative; max-width: 800px; margin: 0 auto 24px; z-index: 2;}
+        #vsl-box { 
+            position: relative; padding-top: 56.25%; border-radius: 12px; overflow: hidden; background:#000; 
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5); border: 4px solid #fff;
+        }
+        #vsl-box iframe { position:absolute; top:0; left:0; width:100%; height:100%; pointer-events:none; }
+        
+        /* Play botão grande e óbvio */
+        #play-btn { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:100px; height:100px; border-radius:50%; background:var(--terracotta-vibrant); display:flex; align-items:center; justify-content:center; box-shadow: 0 0 0 15px rgba(250,88,42,0.3); cursor:pointer; z-index:10; transition: transform 0.2s ease; animation: pulse-play 1.5s infinite;}
+        #play-btn:before { content:''; border-style: solid; border-width: 20px 0 20px 32px; border-color: transparent transparent transparent #fff; margin-left:8px; }
+        
+        @keyframes pulse-play {
+            0% { box-shadow: 0 0 0 0 rgba(250,88,42,0.6); }
+            70% { box-shadow: 0 0 0 25px rgba(250,88,42,0); }
+            100% { box-shadow: 0 0 0 0 rgba(250,88,42,0); }
+        }
+        
+        .top-hide { position:absolute; top:0; width:100%; height:30px; background:#000; opacity:0.6; z-index:5; }
+        .bottom-hide { position:absolute; bottom:0; width:100%; height:40px; background:#000; opacity:0.6; z-index:5; }
+        .fullscreen { position:fixed !important; top:0; left:0; width:100vw !important; height:100vh !important; z-index:9999; border-radius: 0 !important; border: none !important; }
+        #exit { position:absolute; top:20px; right:20px; width:40px; height:40px; border-radius:50%; background:rgba(0,0,0,0.6); color:#fff; display:none; align-items:center; justify-content:center; cursor:pointer; z-index:20; font-weight: 900; font-size: 20px; border: 2px solid #fff; }
+        .fullscreen #exit { display: flex; }
+        .fullscreen #play-btn { display: none !important; }
+
+        /* Listas fluidas */
+        .check-list { list-style: none; margin: 32px 0; }
+        .check-list li { 
+            position: relative; padding-left: 44px; margin-bottom: 16px; font-size: 1.15rem; 
+            background: #fff; padding-top: 16px; padding-bottom: 16px; padding-right: 20px;
+            border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            border: 1px solid #EFEAE2; font-weight: 600;
+        }
+        .check-list li::before { 
+            content: '✓'; position: absolute; left: 16px; top: 50%; transform: translateY(-50%); 
+            color: var(--green); font-weight: 900; font-size: 1.4rem; 
+        }
+        
+        /* Provas Reais */
+        .grid-provas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 32px; }
+        .grid-provas img { width: 100%; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); border: 3px solid #fff; }
+        @media (max-width: 768px) {
+            .grid-provas { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 16px; margin: 32px -24px 0; padding: 0 24px 16px; gap: 12px; }
+            .grid-provas img { flex: 0 0 85%; scroll-snap-align: center; }
+        }
+
+        /* Depoimento */
+        .card-depoimento { 
+            background: #fff; padding: 40px; border-radius: 20px; display: flex; gap: 24px; align-items: center; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 2px solid #F0E8DD;
+        }
+        .card-depoimento img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 4px solid var(--cream); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        .card-depoimento blockquote { 
+            font-size: 1.15rem; font-style: italic; color: var(--brown); 
+            margin-bottom: 16px; font-weight: 700;
+        }
+        .card-depoimento .author { font-size: 0.95rem; color: var(--terracotta-dark); font-weight: 800; text-transform: uppercase;}
+        @media (max-width: 650px) { .card-depoimento { flex-direction: column; text-align: center; padding: 30px 20px; } }
+
+        /* Quem é Dani */
+        .bio-section { display: flex; gap: 40px; align-items: center; }
+        .bio-section img { width: 45%; border-radius: 20px; box-shadow: 0 16px 32px rgba(0,0,0,0.1); border: 4px solid #fff; }
+        .bio-text p { margin-bottom: 16px; font-size: 1.1rem; }
+        @media (max-width: 700px) { .bio-section { flex-direction: column; } .bio-section img { width: 100%; max-width: 320px; } }
+
+        /* O que vai aprender */
+        .modulo-card { 
+            display: flex; gap: 20px; background: #fff; padding: 24px; border-radius: 16px; 
+            margin-bottom: 20px; box-shadow: 0 4px 16px rgba(0,0,0,0.04); 
+            border: 2px solid #F0E8DD;
+        }
+        .modulo-num { font-size: 3rem; color: var(--terracotta); font-weight: 900; line-height: 1; min-width: 50px; letter-spacing: -3px;}
+        .modulo-card h3 { font-size: 1.25rem; margin-bottom: 8px; color: var(--brown); }
+        .modulo-card p { font-size: 1rem; color: #555; }
+        @media (max-width: 600px) { .modulo-card { flex-direction: column; gap: 12px; } }
+
+        .imagem-responsiva { width: 100%; border-radius: 16px; margin: 32px 0; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border: 4px solid #fff; }
+
+        /* Bônus */
+        .bonus-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 32px; }
+        .bonus-card { 
+            background: #fff; border: 3px solid var(--gold); border-radius: 16px; padding: 24px 20px; text-align: center; 
+            box-shadow: 0 8px 24px rgba(240, 184, 73, 0.2);
+        }
+        .bonus-card h3 { font-size: 1.1rem; color: var(--terracotta-dark); margin-bottom: 12px; }
+        .bonus-card p { font-size: 0.95rem; color: #555; }
+        @media (max-width: 768px) { .bonus-grid { grid-template-columns: 1fr; } }
+
+        /* Oferta - Total Impacto */
+        .oferta-box { 
+            background: #fff; border: 4px solid var(--green); border-radius: 24px; padding: 40px; 
+            text-align: center; margin: 40px 0; box-shadow: 0 20px 50px rgba(37, 211, 102, 0.15); 
+        }
+        .oferta-lista { text-align: left; margin: 24px auto; max-width: 420px; list-style: none; }
+        .oferta-lista li { margin-bottom: 12px; padding-left: 32px; position: relative; font-size: 1.1rem; font-weight: 700; color: var(--brown);}
+        .oferta-lista li::before { content: '✓'; position: absolute; left: 0; color: var(--green); font-weight: 900; font-size: 1.3rem;}
+        
+        .preco-de { text-decoration: line-through; color: #888; font-size: 1.2rem; font-weight: 700;}
+        .preco-por { font-size: 4.5rem; font-weight: 900; color: var(--green); line-height: 1; margin: 8px 0; letter-spacing: -3px;}
+        .preco-vista { font-weight: 800; color: var(--brown); font-size: 1.3rem; margin-bottom: 4px;}
+        .preco-parc { color: #666; font-size: 1rem; margin-bottom: 32px; font-weight: 600;}
+        @media (max-width: 600px) { .oferta-box { padding: 32px 20px; } .preco-por { font-size: 3.8rem; } }
+        
+        /* Garantia */
+        .garantia-section { 
+            display: flex; gap: 32px; align-items: center; background: #fff; padding: 32px; 
+            border-radius: 20px; border: 2px solid #EFEAE2; box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+        .selo-garantia { 
+            width: 140px; flex-shrink: 0; font-size: 4rem; 
+            color: var(--gold); font-weight: 900; text-align: center; line-height: 0.9; letter-spacing: -2px;
+        }
+        .selo-garantia span { font-size: 1.2rem; font-weight: 800; color: var(--brown); text-transform: uppercase; letter-spacing: 1px; display: block; margin-top: 8px;}
+        @media (max-width: 650px) { .garantia-section { flex-direction: column; text-align: center; } }
+
+        /* Carrossel */
+        .carousel-container { width: 100%; overflow: hidden; margin: 40px 0; position: relative; }
+        .carousel-track { display: flex; width: calc(320px * 18); animation: scroll 40s linear infinite; }
+        .carousel-item { width: 320px; padding: 0 8px; flex-shrink: 0; }
+        .carousel-item img { width: 100%; height: 220px; object-fit: cover; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.1); border: 2px solid #fff;}
+        @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-320px * 9)); } }
+        @media (max-width: 600px) {
+             .carousel-item { width: 280px; }
+             .carousel-item img { height: 190px; }
+             .carousel-track { width: calc(280px * 18); }
+             @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-280px * 9)); } }
+        }
+
+        /* FAQ */
+        .faq-container { background: #fff; padding: 24px; border-radius: 20px; box-shadow: 0 8px 24px rgba(0,0,0,0.04); border: 2px solid #F0E8DD; }
+        .faq-item { border-bottom: 2px solid #F0E8DD; margin-bottom: 8px; }
+        .faq-question { padding: 20px 0; cursor: pointer; font-weight: 800; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; color: var(--brown); }
+        .faq-question::after { content: '+'; font-size: 2rem; color: var(--terracotta); transition: transform 0.3s ease; font-weight: 500; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; font-size: 1.05rem; color: #555; font-weight: 500;}
+        .faq-item.active .faq-question::after { transform: rotate(45deg); color: var(--terracotta-dark); }
+        .faq-item.active .faq-answer { max-height: 500px; padding-bottom: 20px; }
+
+        /* Exit Intent Modal */
+        .modal-overlay {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85);
+            z-index: 99999; display: flex; align-items: center; justify-content: center;
+            opacity: 0; visibility: hidden; transition: all 0.3s ease; backdrop-filter: blur(5px);
+        }
+        .modal-overlay.show { opacity: 1; visibility: visible; }
+        .modal-content {
+            background: #fff; width: 90%; max-width: 500px; padding: 40px; border-radius: 24px;
+            text-align: center; position: relative; transform: scale(0.9); transition: transform 0.3s ease;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.3); border: 4px solid var(--terracotta);
+        }
+        .modal-overlay.show .modal-content { transform: scale(1); }
+        .modal-close { position: absolute; top: 16px; right: 20px; font-size: 2rem; cursor: pointer; color: #aaa; line-height: 1; font-weight: bold;}
+        .modal-close:hover { color: #333; }
+        .modal-content h2 { color: var(--terracotta-dark); font-size: 2rem; margin-bottom: 16px; letter-spacing: -1px;}
+        .modal-content p { font-size: 1.1rem; margin-bottom: 16px; font-weight: 600;}
+        .modal-link-btn { background: none; border: none; color: #888; text-decoration: underline; font-weight: 600; font-size: 0.9rem; margin-top: 16px; cursor: pointer;}
+        .modal-link-btn:hover { color: #555; }
+
+        /* Footer */
+        footer { text-align: center; padding: 40px 24px; font-size: 0.9rem; color: #888; background: #EFEAE2; font-weight: 600;}
+        footer a { color: var(--terracotta-dark); text-decoration: none; font-weight: 700; }
+        
+        .text-center { text-align: center; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. HERO - Mega Impacto Acima da Dobra -->
+    <section class="hero-section">
+        <div class="container">
+            <span class="pre-headline">Acesso Imediato · Compra Segura</span>
+            <h1>Sim! No vídeo abaixo eu te mostro o melhor caminho pra você se tornar referência na confeitaria aí na sua cidade.</h1>
+            <p class="subhead">São as 11 receitas juninas que mais vendem, como cobrar certo e como vender — mesmo começando do zero, com o liquidificador que você já tem em casa.</p>
+            
+            <!-- VSL Compacta e Focada -->
+            <div id="vsl-container">
+                <div id="vsl-box">
+                    <iframe 
+                        id="vsl-video"
+                        src="https://www.youtube.com/embed/ivEvvhPdigk?autoplay=1&mute=1&controls=0&disablekb=1&fs=0&iv_load_policy=3&modestbranding=1&playsinline=1&rel=0"
+                        frameborder="0"
+                        allow="autoplay">
+                    </iframe>
+                    <div class="top-hide"></div>
+                    <div class="bottom-hide"></div>
+                    <div id="play-btn"></div>
+                    <div id="exit">✕</div>
+                </div>
+            </div>
+
+            <!-- Botão Gigante de Conversão logo abaixo do vídeo -->
+            <a href="https://pay.hotmart.com/T100112878L?checkoutMode=10" class="cta-btn track-click">
+                <div>
+                    QUERO COMEÇAR A LUCRAR AGORA
+                </div>
+            </a>
+            <p class="cta-microcopy">✓ Acesso imediato no e-mail · ✓ 7 dias de garantia · ✓ Compra 100% segura</p>
+        </div>
+    </section>
+
+    <!-- 2. Provas reais -->
+    <section style="background: #EFEAE2;">
+        <div class="container">
+            <h2>Elas já aproveitaram a oportunidade e estão lucrando</h2>
+            
+            <div class="grid-provas">
+                <img src="images/provas-sociais/01.jpeg" alt="Depoimento 1" loading="lazy">
+                <img src="images/provas-sociais/02.jpeg" alt="Depoimento 2" loading="lazy">
+                <img src="images/provas-sociais/03.jpeg" alt="Depoimento 3" loading="lazy">
+                <img src="images/provas-sociais/04.jpeg" alt="Depoimento 4" loading="lazy">
+                <img src="images/provas-sociais/05.jpeg" alt="Depoimento 5" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Identificação -->
+    <section>
+        <div class="container">
+            <h2>Esse treinamento é pra você se...</h2>
+            
+            <ul class="check-list">
+                <li>Você quer fazer dinheiro com bolos, mas ainda não tem clareza de como começar do jeito certo.</li>
+                <li>Você já tentou receita de YouTube ou de grupo de WhatsApp, e a massa solou, perdeu ingrediente, ficou frustrada e perdeu dinheiro.</li>
+                <li>Você já até vende bolos, mas no fim do mês não te sobra quase nada na conta. Praticamente pagando pra trabalhar.</li>
+                <li>Você sabe a potência que é o São João (a época de ouro do bolo) e quer estar preparada pra aproveitar essa oportunidade e lucrar muito.</li>
+                <li>Você quer trabalhar de dentro da sua própria casa, perto dos seus filhos e da sua família, sem depender de ninguém pra ter o seu dinheiro.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 4. Depoimento Vilmara -->
+    <section style="background: #F8F4ED;">
+        <div class="container">
+            <div class="card-depoimento">
+                <img src="images/vilmara/vilmara.jpeg" alt="Vilmara Oliveira" loading="lazy">
+                <div>
+                    <blockquote>"Valeu a pena demais! Hoje produzo meus bolos na minha cozinha, precifico certinho e aplico as estratégias que você passou. Mudou a minha vida! ❤️"</blockquote>
+                    <span class="author">— Vilmara Oliveira, aluna</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Quem é Daniella -->
+    <section>
+        <div class="container bio-section">
+            <div class="bio-text">
+                <h2>Prazer, eu me chamo Daniella</h2>
+                <p>Sou confeiteira há mais de 12 anos, de <strong>Paulo Afonso, na Bahia</strong>. Comecei na cozinha da minha casa, com um liquidificador velho, um forno que mal esquentava bem e uma vontade enorme de provar pra mim mesma que eu podia viver disso.</p>
+                <p><strong>E provei.</strong></p>
+                <p>Hoje sou Mestre em Confeitaria Artística, tenho mais de <strong>10 mil mulheres</strong> me acompanhando todo dia no Instagram, e já ensinei mais de <strong>200 alunas</strong> a transformarem a cozinha de casa em um negócio que paga as contas, dá orgulho e ainda sobra dinheiro no fim do mês.</p>
+                <p>E é exatamente isso que eu quero pra você. <strong>Bora?</strong></p>
+            </div>
+            <img src="images/dani/dani-oficial.png" alt="Maria Daniella" loading="lazy">
+        </div>
+    </section>
+
+    <!-- 6. O que vai aprender -->
+    <section style="background: #EFEAE2;">
+        <div class="container">
+            <h2 style="margin-bottom: 40px;">O que você vai aprender (e levar pra sempre):</h2>
+            
+            <div class="modulo-card">
+                <div class="modulo-num">1</div>
+                <div>
+                    <h3>AS 11 RECEITAS QUE MAIS VENDEM NO SÃO JOÃO</h3>
+                    <p>Bolo de Milho Cremoso, Tapioca, Macaxeira, Puba, Churros e mais 6 sabores campeões. Cada receita gravada passo a passo, com o ponto exato da massa, o segredo do forno e a margem de lucro que cada uma dá. Tudo prático, rápido e barato de fazer.</p>
+                </div>
+            </div>
+            
+            <div class="modulo-card">
+                <div class="modulo-num">2</div>
+                <div>
+                    <h3>PRECIFICA BY DANI — O APP EXCLUSIVO DE PRECIFICAÇÃO</h3>
+                    <p>O nosso aplicativo pra você precificar de forma simples, inteligente e rápida. <strong>Instalável no celular ou no computador, funciona offline.</strong> Você coloca o preço dos ingredientes e ele calcula sozinho quanto cobrar pra ter lucro de verdade. <em>Antes você cobrava no chute. Agora você cobra com inteligência.</em></p>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <div class="modulo-num">3</div>
+                <div>
+                    <h3>IA DANI — SUA ASSISTENTE 24 HORAS</h3>
+                    <p>Uma Inteligência Artificial treinada com TODO o meu conhecimento de confeitaria, marketing e vendas. Qualquer dúvida — ponto de massa, como responder cliente no WhatsApp, ideia de post pro Instagram — você pergunta e ela responde na hora, direto no seu bolso.</p>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <div class="modulo-num">4</div>
+                <div>
+                    <h3>COMUNIDADE VIP DE ALUNAS NO WHATSAPP</h3>
+                    <p>Você entra direto pro nosso grupo fechado, onde a gente troca receita, ideia e onde você fala COMIGO direto. Tira dúvida, manda foto do seu bolo, recebe feedback. Você não vai estar sozinha nessa.</p>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <div class="modulo-num">5</div>
+                <div>
+                    <h3>ACESSO VITALÍCIO + ATUALIZAÇÕES GRÁTIS</h3>
+                    <p>Comprou uma vez, é seu pra sempre. Sempre que eu gravar receita nova, atualizar o app ou trazer estratégia nova, você recebe sem pagar nada a mais.</p>
+                </div>
+            </div>
+
+            <div class="modulo-card">
+                <div class="modulo-num">6</div>
+                <div>
+                    <h3>CERTIFICADO DE CONCLUSÃO PROFISSIONAL</h3>
+                    <p>Ao terminar o curso, você recebe seu certificado pra mostrar pros seus clientes (e pra você mesma) que agora você é uma confeiteira capacitada de verdade.</p>
+                </div>
+            </div>
+
+            <img src="images/area-membros/area-membros.png" alt="Área de Membros Hotmart" class="imagem-responsiva" loading="lazy">
+        </div>
+    </section>
+
+    <!-- 7. Bônus -->
+    <section>
+        <div class="container">
+            <h2 style="color: var(--terracotta);">BÔNUS ESPECIAIS DE HOJE:</h2>
+            
+            <div class="bonus-grid">
+                <div class="bonus-card">
+                    <h3>🎁 AULA DE EMBALAGEM PROFISSIONAL E TRANSPORTE</h3>
+                    <p>Como embalar seu bolo pra ele chegar inteiro, bonito e profissional na casa do cliente. Os materiais que valem a pena (e os que você NÃO precisa gastar dinheiro). E o jeito certo de transportar sem amassar.</p>
+                </div>
+                <div class="bonus-card">
+                    <h3>🎁 AULA DE FOTOS QUE VENDEM</h3>
+                    <p>Como tirar foto do seu bolo só com o celular pra parecer foto de revista. Luz, ângulo, fundo, edição básica. As fotos certas são o que faz o cliente clicar pra te chamar.</p>
+                </div>
+                <div class="bonus-card">
+                    <h3>🎁 APP PRECIFICA BY DANI LIBERADO</h3>
+                    <p>O nosso aplicativo de precificação inteiramente liberado pra você (normalmente vendido separado). Você precifica seu bolo certo em menos de 1 minuto e nunca mais erra a margem.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://pay.hotmart.com/T100112878L?checkoutMode=10" class="cta-btn track-click">
+                    <div>
+                        GARANTIR MEUS BÔNUS AGORA
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Oferta -->
+    <section id="oferta" style="background: #F8F4ED;">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 16px;">Chegou a hora.</h2>
+            <p class="text-center" style="font-size: 1.2rem; font-weight: 700; color: var(--terracotta-dark);">Tudo o que você leva entrando agora:</p>
+            
+            <div class="oferta-box">
+                <ul class="oferta-lista">
+                    <li>Curso Completo Bolos Juninos</li>
+                    <li>App Precifica VIP</li>
+                    <li>IA Dani — Assistente 24h</li>
+                    <li>Comunidade VIP de Alunas</li>
+                    <li>Acesso Vitalício</li>
+                    <li>3 Bônus Exclusivos</li>
+                </ul>
+                
+                <div style="margin-top: 32px; padding-top: 24px; border-top: 2px dashed #ddd;">
+                    <p class="preco-de">De R$ 147,00</p>
+                    <p style="font-weight: 800; font-size: 1.2rem;">Por apenas:</p>
+                    <div class="preco-por">R$ 67</div>
+                    <p class="preco-vista">à vista</p>
+                    <p class="preco-parc">ou até 7x no cartão</p>
+                </div>
+                
+                <a href="https://pay.hotmart.com/T100112878L?checkoutMode=10" class="cta-btn track-click">
+                    <div>
+                        COMPRAR AGORA POR R$ 67
+                    </div>
+                </a>
+                <p class="cta-microcopy dark-microcopy">Compra segura na Hotmart · Acesso imediato</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Garantia -->
+    <section>
+        <div class="container">
+            <div class="garantia-section">
+                <div class="selo-garantia">7 DIAS<span>Garantia</span></div>
+                <div>
+                    <h2 style="text-align: left; font-size: 1.8rem; margin-bottom: 12px;">Risco Zero pra você.</h2>
+                    <p>Você tem <strong>7 dias de garantia incondicional</strong>. Teste o curso, assista as aulas, faça a primeira receita. Se não gostar, eu devolvo 100% do seu dinheiro. Sem perguntas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Carrossel Alunas -->
+    <section style="background: #EFEAE2; overflow: hidden; padding: 60px 0;">
+        <div class="container text-center">
+            <h2>Bolos reais de alunas reais</h2>
+        </div>
+        
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <div class="carousel-item"><img src="images/bolos-alunas/01.jpeg" alt="Bolo de aluna" loading="lazy"></div>
+                <div class="carousel-item"><img src="images/bolos-alunas/02.jpeg" alt="Bolo de aluna" loading="lazy"></div>
+                <div class="carousel-item"><img src="images/bolos-alunas/03.jpeg" alt="Bolo de aluna" loading="lazy"></div>
+                <div class="carousel-item"><img src="images/bolos-alunas/04.jpeg" alt="Bolo de aluna" loading="lazy"></div>
+                <div class="carousel-item"><img src="images/bolos-alunas/05.jpeg" alt="Bolo de aluna" loading="lazy"></div>
+                <div class="carousel-item"><img src="images/bolos-alunas/06.jpeg" alt="Bolo de aluna" loading="lazy"></div>
+                <div class="carousel-item"><img src="images/bolos-alunas/07.jpeg" alt="Bolo de aluna" loading="lazy"></div>
+                <div class="carousel-item"><img src="images/bolos-alunas/08.jpeg" alt="Bolo de aluna" loading="lazy"></div>
+                <div class="carousel-item"><img src="images/bolos-alunas/09.jpeg" alt="Bolo de aluna" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 13. FAQ -->
+    <section>
+        <div class="container">
+            <h2>Dúvidas frequentes</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">Eu não sei nada de confeitaria. Serve pra mim?</div>
+                    <div class="faq-answer">Sim. O curso foi feito para quem está começando do zero. Tudo é passo a passo usando o liquidificador que você já tem.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Como recebo o acesso?</div>
+                    <div class="faq-answer">Direto no seu e-mail, em menos de 5 minutos após a confirmação do pagamento.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Por quanto tempo tenho acesso?</div>
+                    <div class="faq-answer">Pra sempre. Acesso vitalício com todas as atualizações futuras gratuitas.</div>
+                </div>
+                <div class="faq-item" style="border-bottom: none;">
+                    <div class="faq-question">Posso pedir reembolso?</div>
+                    <div class="faq-answer">Sim, você tem 7 dias de garantia incondicional. Devolvemos 100% do seu dinheiro se não gostar.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p style="margin-bottom: 8px;">© 2026 — <strong>Bolos Juninos Lucrativos</strong></p>
+        <p style="margin-bottom: 24px;">Por Maria Daniella · <a href="https://instagram.com/deliciaembolodani" target="_blank">@deliciaembolodani</a></p>
+        
+        <p style="font-size: 0.8rem;">
+            Compra Segura via Hotmart<br><br>
+            <a href="politica-de-privacidade.html">Política de Privacidade</a> &nbsp;|&nbsp; 
+            <a href="#">Termos de Uso</a> &nbsp;|&nbsp; 
+            <a href="#">Contato</a>
+        </p>
+    </footer>
+
+    <!-- EXIT INTENT POPUP -->
+    <div class="modal-overlay" id="exitModal">
+        <div class="modal-content">
+            <span class="modal-close" id="closeModal">&times;</span>
+            <h2>Opa, espera aí!</h2>
+            <p style="font-size: 1.2rem; color: #444;">O São João já tá batendo na porta.</p>
+            <p>Essa é a sua chance de Ouro de colocar dinheiro no bolso com receitas que vendem sozinhas.</p>
+            <p style="color: var(--terracotta-dark);"><strong>A oferta de R$ 67 não vai durar pra sempre.</strong></p>
+            <p style="margin-bottom: 32px;">Vai mesmo deixar essa chance passar?</p>
+            
+            <a href="https://pay.hotmart.com/T100112878L?checkoutMode=10" class="cta-btn track-click" style="font-size: 1.1rem; min-height: 60px;">
+                <div>SIM, EU QUERO APROVEITAR AGORA</div>
+            </a>
+            <button class="modal-link-btn" id="closeModalBtn">Não, prefiro continuar como estou</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Custom VSL Player
+        const btn = document.getElementById("play-btn");
+        const iframe = document.getElementById("vsl-video");
+        const box = document.getElementById("vsl-box");
+        const exit = document.getElementById("exit");
+
+        btn.onclick = () => {
+            btn.style.display = "none";
+            iframe.style.pointerEvents = "auto";
+            iframe.src = iframe.src.replace("mute=1","mute=0");
+            box.classList.add("fullscreen");
+            document.body.style.overflow = "hidden";
+        };
+
+        exit.onclick = () => {
+            box.classList.remove("fullscreen");
+            document.body.style.overflow = "auto";
+        };
+
+        window.addEventListener("scroll", () => {
+            if(box.classList.contains("fullscreen")){
+                box.classList.remove("fullscreen");
+                document.body.style.overflow = "auto";
+            }
+        });
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                faqItems.forEach(i => i.classList.remove('active'));
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Meta Pixel Tracking
+        const ctaButtons = document.querySelectorAll('.track-click');
+        ctaButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                if(typeof fbq !== 'undefined') {
+                    fbq('track', 'Lead');
+                }
+            });
+        });
+
+        // Exit Intent Modal Logic
+        const exitModal = document.getElementById('exitModal');
+        const closeModal = document.getElementById('closeModal');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        let hasShownModal = false;
+
+        // Mouse leave at top of screen (desktop)
+        document.addEventListener('mouseleave', (e) => {
+            if (e.clientY < 10 && !hasShownModal) {
+                showModal();
+            }
+        });
+
+        // Fallback for mobile (quick scroll up or after 60 seconds)
+        let lastScrollY = window.scrollY;
+        window.addEventListener('scroll', () => {
+            if (window.scrollY < lastScrollY - 150 && window.scrollY > 500 && !hasShownModal) {
+                // If scrolled up quickly and not at the very top
+                // Uncomment line below to enable scroll-up trigger on mobile
+                // showModal(); 
+            }
+            lastScrollY = window.scrollY;
+        });
+
+        function showModal() {
+            exitModal.classList.add('show');
+            hasShownModal = true;
+        }
+
+        function hideModal() {
+            exitModal.classList.remove('show');
+        }
+
+        closeModal.addEventListener('click', hideModal);
+        closeModalBtn.addEventListener('click', hideModal);
+        exitModal.addEventListener('click', (e) => {
+            if (e.target === exitModal) hideModal();
+        });
+    </script>
+</body>
+</html>
