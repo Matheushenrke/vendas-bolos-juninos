@@ -139,8 +139,12 @@
             100% { box-shadow: 0 0 0 0 rgba(250,88,42,0); }
         }
         
-        .top-hide { position:absolute; top:0; width:100%; height:30px; background:#000; opacity:0.6; z-index:5; }
-        .bottom-hide { position:absolute; bottom:0; width:100%; height:40px; background:#000; opacity:0.6; z-index:5; }
+        .top-hide { position:absolute; top:0; width:100%; height:10px; background:#000; opacity:0.5; z-index:5; pointer-events: none;}
+        .bottom-hide { position:absolute; bottom:0; width:100%; height:15px; background:#000; opacity:0.5; z-index:5; pointer-events: none;}
+        
+        .scroll-hint { display: none; text-align: center; color: #888; font-size: 0.9rem; margin-top: -16px; margin-bottom: 24px; font-weight: 600; }
+        @media (max-width: 768px) { .scroll-hint { display: block; animation: bounce-x 2s infinite; } }
+        @keyframes bounce-x { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(5px); } }
         .fullscreen { position:fixed !important; top:0; left:0; width:100vw !important; height:100vh !important; z-index:9999; border-radius: 0 !important; border: none !important; }
         #exit { position:absolute; top:20px; right:20px; width:40px; height:40px; border-radius:50%; background:rgba(0,0,0,0.6); color:#fff; display:none; align-items:center; justify-content:center; cursor:pointer; z-index:20; font-weight: 900; font-size: 20px; border: 2px solid #fff; }
         .fullscreen #exit { display: flex; }
@@ -324,6 +328,7 @@
     <section style="background: #EFEAE2;">
         <div class="container">
             <h2>Elas já aproveitaram a oportunidade e estão lucrando</h2>
+            <p class="scroll-hint">Arraste para o lado para ver mais 👉</p>
             
             <div class="grid-provas">
                 <img src="images/provas-sociais/01.jpeg" alt="Depoimento 1" loading="lazy">
@@ -555,6 +560,19 @@
                     <div class="faq-answer">Sim, você tem 7 dias de garantia incondicional. Devolvemos 100% do seu dinheiro se não gostar.</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- 14. Mensagem Final -->
+    <section style="background: #F8F4ED; border-top: 2px solid #EFEAE2; border-bottom: 2px solid #EFEAE2;">
+        <div class="container text-center">
+            <h2 style="font-size: 2rem; margin-bottom: 24px; color: var(--terracotta-dark);">O fim da página. O começo da sua grande oportunidade.</h2>
+            <p style="font-size: 1.15rem; color: #444; max-width: 700px; margin: 0 auto 32px; font-weight: 500;">Imagine a cena: Daqui a 30 dias, você no auge da época junina, com a cozinha cheirando a bolo fresco, o celular apitando com novas encomendas e o dinheiro entrando na conta de verdade. Sem precisar depender de ninguém, sendo reconhecida pelo que faz.</p>
+            <p style="font-size: 1.15rem; color: #444; max-width: 700px; margin: 0 auto 40px; font-weight: 500;">Você está a um clique de distância disso. Mas você precisa dar esse primeiro passo.</p>
+            
+            <a href="https://pay.hotmart.com/T100112878L?checkoutMode=10" class="cta-btn track-click" style="max-width: 400px; margin: 0 auto;">
+                <div>QUERO COMEÇAR A LUCRAR AGORA</div>
+            </a>
         </div>
     </section>
 
